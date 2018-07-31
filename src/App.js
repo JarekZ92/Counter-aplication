@@ -18,7 +18,13 @@ class App extends Component {
 
     render () {
         return(
-          
+            <div>
+            <h1>{this.state.startCounter}</h1>
+            <button onClick ={this.addCounterFunction}> - </button>
+            <button onClick ={this.subtractCounterFunction}> + </button>
+
+
+            </div>
         )
     }
 
