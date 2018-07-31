@@ -10,7 +10,13 @@ class App extends Component {
         })
     }
 
-    
+    subtractCounterFunction = () => {
+        this.setState({
+            startCounter: this.state.startCounter -1
+        })
+    }
+
+
 }
 
 export default App
