@@ -19,7 +19,13 @@ class App extends Component {
 
   addFiveFunction = () => {
     this.setState({
-      startCounter: this.state.startCounter +5
+      startCounter: this.state.startCounter + 5
+    })
+  }
+
+  resetCounter = () => {
+    this.setState({
+      startCounter: this.state.startCounter = 0
     })
   }
 
@@ -31,6 +37,7 @@ class App extends Component {
         <button onClick={this.addCounterFunction}> + </button>
         <button onClick={this.subtractCounterFunction}> - </button>
         <button onClick={this.addFiveFunction}> +5 </button>
+       <br /> <button onClick={this.resetCounter}> Reset to 0 </button>
       </div>
     );
   }
